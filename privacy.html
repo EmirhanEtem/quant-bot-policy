@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Quant Bot</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 25px 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3 {
+            color: #5865F2; /* Discord Brand Color */
+        }
+        h1 {
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        code {
+            background-color: #eef1f5;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: "Courier New", Courier, monospace;
+        }
+        .footer {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy - Quant Bot</h1>
+        <p><strong>Last Updated:</strong> September 1, 2024</p>
+
+        <p>This Privacy Policy explains what data the Quant Discord Bot ("the Bot," "the Service") collects from its users, and how that data is used and protected.</p>
+
+        <h2>1. Data We Collect</h2>
+        <p>When you use the Bot, we may collect and store the following types of data:</p>
+        
+        <h3>A. Data Collected Automatically</h3>
+        <ul>
+            <li><strong>Your Discord User ID:</strong> This is necessary to identify who is using a command and to store user-specific settings, such as Spotify data.</li>
+            <li><strong>Server ID and Channel ID:</strong> This is required to ensure commands work in the correct server and channel.</li>
+        </ul>
+
+        <h3>B. Data You Provide to Us</h3>
+        <ul>
+            <li><strong>Command Content:</strong> Text you provide with commands like <code>!play</code>, <code>!resim</code>, <code>!quant</code>, or <code>!translate</code> (e.g., song names, AI prompts, text for translation) is temporarily processed and sent to the relevant third-party APIs to fulfill the command.</li>
+            <li><strong>Spotify Authorization Data:</strong> When you use the <code>!spotify_login</code> command, you initiate an OAuth2 authorization flow. Upon successful authorization, we store the <strong>access token</strong> and <strong>refresh token</strong> provided by Spotify. This data is associated with your Discord User ID and is stored in a secure file on the server where the Bot is hosted. We do not store your Spotify password. This data is used exclusively to access your playlists for the playback feature.</li>
+        </ul>
+        
+        <h3>C. Server Log Data</h3>
+        <p>When configured by server administrators, the Bot can log the following actions to a specific channel:</p>
+        <ul>
+            <li>The content, author, and channel of deleted messages.</li>
+            <li>The original and edited versions of edited messages.</li>
+            <li>Moderation actions, such as when a role is given to or taken from a user.</li>
+        </ul>
+        <p>The maintenance and management of these logs are the responsibility of the administrators of the Discord server where the Bot is active.</p>
+
+        <h2>2. How We Use Your Data</h2>
+        <p>Collected data is used for the following purposes:</p>
+        <ul>
+            <li>To perform the Bot's core functions (e.g., responding to your commands).</li>
+            <li>To play your Spotify playlists via the <code>!playlist</code> command.</li>
+            <li>To send requests to the relevant APIs for AI, translation, and other features.</li>
+            <li>To provide moderation information to server administrators.</li>
+            <li>To improve the service and troubleshoot potential issues.</li>
+        </ul>
+
+        <h2>3. Data Sharing and Third Parties</h2>
+        <p>We do not sell or rent your data. However, to function, the Bot may share your data with the following third-party services:</p>
+        <ul>
+            <li><strong>Google (Generative AI & Translate):</strong> Text from <code>!quant</code> and <code>!translate</code> commands.</li>
+            <li><strong>Hugging Face:</strong> Text prompts from the <code>!resim</code> command.</li>
+            <li><strong>Spotify:</strong> We access your playlists using your stored tokens when you use the <code>!playlist</code> command.</li>
+            <li><strong>YouTube:</strong> Search queries from the <code>!play</code> command.</li>
+        </ul>
+        <p>We recommend you review the privacy policies of these services.</p>
+        
+        <h2>4. Data Storage and Security</h2>
+        <p>Your Spotify authorization tokens are stored on the server hosting the Bot. We take reasonable security measures to prevent unauthorized access to this data. Other data, such as command content, is generally processed in-memory and not permanently stored, with the exception of server logs.</p>
+
+        <h2>5. Your Rights & Data Deletion</h2>
+        <p>You have the right to request the permanent deletion of your stored Spotify data (your tokens) from our system. To make this request, please contact us using the information below. Upon your request, all Spotify data associated with your Discord ID will be deleted.</p>
+
+        <h2>6. Changes to this Policy</h2>
+        <p>We may update this Privacy Policy from time to time. Changes will be effective upon being posted on this page.</p>
+
+        <h2>7. Contact</h2>
+        <p>If you have any questions or requests regarding this Privacy Policy or your data, please contact us at: <strong>[Your Contact Information: Discord Tag#1234 or Email]</strong>.</p>
+    </div>
+    <div class="footer">
+        <p>© 2024 Quant Bot</p>
+    </div>
+</body>
+</html>
